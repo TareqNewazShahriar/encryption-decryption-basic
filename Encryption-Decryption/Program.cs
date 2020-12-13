@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 using System.Security.Cryptography;
@@ -9,8 +9,8 @@ public class rfc2898test
 	public static void Main(string[] passwordargs)
 	{
 		string data, encData, encKey, encAlgoKey, saltString, deData;
-		encKey = "komu na";
-		data = "kota koshna killai";
+		encKey = "gopon bartar pathoddhar korar chabi";
+		data = "amar kotha ja ami onumodito bekti chara ar kew janbe na";
 
 		Encrypt(data, encKey, out encData, out encAlgoKey, out saltString);
 		deData = Decrypt(encData, encKey, encAlgoKey, saltString);
