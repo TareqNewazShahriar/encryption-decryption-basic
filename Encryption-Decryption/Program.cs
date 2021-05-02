@@ -9,8 +9,8 @@ public class rfc2898test
 	public static void Main(string[] passwordargs)
 	{
 		string data, encData, encKey, encAlgoKey, saltString, deData;
-		encKey = "gopon bartar pathoddhar korar chabi";
-		data = "amar kotha ja ami onumodito bekti chara ar kew janbe na";
+		encKey = "onek kothin ekta chabi banailam, onek mojbut";
+		data = "Tomorrow a secret meeting will be held, don't compromise.";
 
 		Encrypt(data, encKey, out encData, out encAlgoKey, out saltString);
 		deData = Decrypt(encData, encKey, encAlgoKey, saltString);
